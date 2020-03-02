@@ -27,14 +27,17 @@ body {
 }
 
 .testimonial-background {
-  min-height: 75vh;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
   /* display: flex;
-  align-items: center;
-  justify-content: center; */
+  align-items: flex-start; */
+  /* justify-content: center; */
   background: linear-gradient(
-    rgba(0, 0, 0, 0.15),
-    rgba(0, 0, 0, 0.15),
-    rgba(0, 0, 0, 0.15)
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1)
   );
   opacity: 1 !important;
   background-position: center;
@@ -42,6 +45,11 @@ body {
   /* margin-bottom: 4.5rem; */
   /* background-attachment: fixed; */
   color: white;
+}
+@media (min-width: 576px) {
+  .testimonial-background {
+    background-position: bottom;
+  }
 }
 
 .testimonial-font {
