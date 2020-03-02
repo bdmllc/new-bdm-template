@@ -1,21 +1,38 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import img from "../images/homeBcg.jpg"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import BackgroundSection from "../components/globals/BackgroundSection"
+import NavbarHeader from "../components/globals/navbar/NavbarHeader"
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
+
+    <BackgroundSection
+      img={data.img1.childImageSharp.fluid}
+      title="Acme Co."
+      styleClass="default-background"
+    >
+      <NavbarHeader />
+    </BackgroundSection>
+
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 
 export default IndexPage
+
+export const query = graphql`
+  {
+    img1: file(relativePath: { eq: "homeBcg.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1280) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
