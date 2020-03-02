@@ -18,15 +18,11 @@ export default class NavbarHeader extends Component {
 }
 
 const HeaderWrapper = styled.div`
-  padding: 0.4rem 1rem;
+  padding: 1.5rem 0rem 0rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  .toggle-icon {
-    font-size: 1.75rem;
-    color: #3a5249;
-    cursor: pointer;
-  }
+
   @media (min-width: 768px) {
     .toggle-icon {
       display: none;
