@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => (
     <BackgroundSection
       img={data.img1.childImageSharp.fluid}
       title="Acme Co."
-      styleClass="default-background"
+      styleClass="testimonial-background"
     >
       <NavbarHeader />
     </BackgroundSection>
