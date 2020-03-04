@@ -6,6 +6,8 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import BackgroundSection from "../components/globals/BackgroundSection"
 import NavbarHeader from "../components/globals/navbar/NavbarHeader"
+// import Gallery from "../components/home/Gallery"
+import GalleryArtDirection from "../components/home/GalleryArtDirection"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -18,6 +20,12 @@ const IndexPage = ({ data }) => (
     >
       <NavbarHeader />
     </BackgroundSection>
+    <GalleryArtDirection />
+    <BackgroundSection
+      img={data.img1.childImageSharp.fluid}
+      title="Acme Co."
+      styleClass="testimonial-background"
+    ></BackgroundSection>
 
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
