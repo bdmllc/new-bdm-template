@@ -10,7 +10,8 @@ export default function GalleryArtDirection() {
   return (
     <ServicesWrapper>
       <section className="services">
-        <h4>Example "Trusted by" Section</h4>
+        <h4>Our Clients</h4>
+        <p>(Fictitious Examples)</p>
         {/* <Title title="services" /> */}
         <div className="services-center">
           <div>
@@ -42,8 +43,9 @@ const ServicesWrapper = styled.div`
     color: #3a5249;
     /* font-weight: 900; */
     text-align: center;
-    padding-top: 3rem;
-    padding-bottom: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    margin-top: 1.5rem;
   }
   .services-center {
     width: 90vw;
@@ -83,8 +85,14 @@ const ServicesWrapper = styled.div`
   }
 
   h4 {
-    margin: 0rem 0rem 4rem 0rem;
-    color: #484848;
-    font-size: 1.35rem;
+    font-family: "Times New Roman", Times, serif;
+    margin: 0rem 0rem 0.25rem 0rem;
+    color: grey;
+    font-size: 2.35rem;
+  }
+  p {
+    margin: 0rem 0rem 2.25rem 0rem;
+    font-size: 0.25;
+    color: grey;
   }
 `

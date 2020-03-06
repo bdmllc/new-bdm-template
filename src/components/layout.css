@@ -58,3 +58,15 @@ body {
   font-size: 1.25rem;
   color: white;
 }
+
+.btn-white {
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  color: white;
+  border: 2px solid white;
+  padding: 0.9rem 1.6rem;
+  display: inline-block;
+  transition: var(--mainTransition);
+  cursor: pointer;
+  text-decoration: none;
+}
